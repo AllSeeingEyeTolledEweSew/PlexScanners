@@ -1,6 +1,6 @@
 import os, re, string, unicodedata, sys
 from urllib import urlopen, urlencode
-import UnicodeHelper
+from plex.scanners.Common import UnicodeHelper
 
 RE_UNICODE_CONTROL =  u'([\u0000-\u0008\u000b-\u000c\u000e-\u001f\ufffe-\uffff])' + \
                       u'|' + \

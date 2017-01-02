@@ -2,8 +2,8 @@
 # Copyright (c) 2010 Plex Development Team. All rights reserved.
 #
 import re, os, os.path
-import Media, VideoFiles, Stack, Utils
-from mp4file import mp4file, atomsearch
+from plex.scanners.Common import Media, VideoFiles, Stack, Utils
+from plex.scanners.Common.mp4file import mp4file, atomsearch
 
 episode_regexps = [
     '(?P<show>.*?)[sS](?P<season>[0-9]+)[\._ ]*[eE](?P<ep>[0-9]+)[\._ ]*([- ]?[sS](?P<secondSeason>[0-9]+))?([- ]?[Ee+](?P<secondEp>[0-9]+))?', # S03E04-E05

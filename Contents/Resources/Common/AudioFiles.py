@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
-import Filter, Media
+from plex.scanners.Common import Filter, Media
 import os.path
 import re, os, string
-import ID3, ID3v2
+from plex.scanners.Common import ID3, ID3v2
 from mutagen.flac import FLAC
 from mutagen.oggvorbis import OggVorbis
 from mutagen.easyid3 import EasyID3

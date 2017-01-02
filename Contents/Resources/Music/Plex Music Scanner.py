@@ -2,7 +2,7 @@
 # Copyright (c) 2010-2011 Plex Development Team. All rights reserved.
 #
 
-import AudioFiles
+from plex.scanners.Common import AudioFiles
 
 def Scan(path, files, mediaList, subdirs, language=None, root=None):
   # Scan for audio files.

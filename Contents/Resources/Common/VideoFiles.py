@@ -1,5 +1,5 @@
 #!/usr/bin/python2.4
-import Filter
+from plex.scanners.Common import Filter
 import os.path, re, datetime, titlecase, unicodedata, sys
 
 video_exts = ['3g2', '3gp', 'asf', 'asx', 'avc', 'avi', 'avs', 'bivx', 'bup', 'divx', 'dv', 'dvr-ms', 'evo', 'fli', 'flv',
@@ -155,14 +155,6 @@ def CleanName(name):
   #print "FINAL:  ", finalTokens
   
   cleanedName = ' '.join(finalTokens)
-  
-  # If we failed to decode/encode above, we may still be dealing with a non-ASCII string here,
-  # which will raise if we try to encode it, so let's just handle it and hope for the best!
-  #
-  try:
-    cleanedName = cleanedName.encode('utf-8')
-  except:
-    pass
   
   return (titlecase.titlecase(cleanedName), year)
 

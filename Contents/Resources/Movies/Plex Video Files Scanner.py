@@ -2,7 +2,7 @@
 # Copyright (c) 2011 Plex Development Team. All rights reserved.
 #
 import re, os, os.path
-import Media, VideoFiles, Stack
+from plex.scanners.Common import Media, VideoFiles, Stack
 
 # Scans through files, and add to the media list.
 def Scan(path, files, mediaList, subdirs, language=None, root=None):

@@ -45,7 +45,7 @@
 import sys
 import string
 import struct
-from UnicodeHelper import fixEncoding
+from plex.scanners.Common.UnicodeHelper import fixEncoding
 
 _encodings = ['iso8859-1', 'utf-16', 'utf-16be', 'utf-8']
 
