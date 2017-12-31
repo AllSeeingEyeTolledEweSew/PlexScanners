@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from plex.scanners.Common import Filter
+from plex_scanners.Common import Filter
 import os.path
 
 photo_exts = ['png','jpg','jpeg','bmp','gif','ico','tif','tiff','tga','pcx','dng','nef','cr2','crw','orf','arw','erf','3fr','dcr','x3f','mef','raf','mrw','pef','sr2', 'mpo', 'jps', 'rw2']

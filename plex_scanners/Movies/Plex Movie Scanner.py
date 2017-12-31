@@ -2,8 +2,8 @@
 # Copyright (c) 2010 Plex Development Team. All rights reserved.
 #
 import re, os, os.path
-from plex.scanners.Common import Media, VideoFiles, Stack, Utils
-SeriesScanner = getattr(__import__('plex.scanners.Series.Plex Series Scanner').scanners.Series, "Plex Series Scanner")
+from plex_scanners.Common import Media, VideoFiles, Stack, Utils
+SeriesScanner = getattr(__import__('plex_scanners.Series.Plex Series Scanner').scanners.Series, "Plex Series Scanner")
 
 nice_match = '(.+) [\(\[]([1-2][0-9]{3})[\)\]]'
 standalone_tv_regexs = [ '(.*?)( \(([0-9]+)\))? - ([0-9])+x([0-9]+)(-[0-9]+[Xx]([0-9]+))? - (.*)' ]

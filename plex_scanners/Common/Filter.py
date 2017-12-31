@@ -1,5 +1,5 @@
 import os, re, fnmatch, glob
-from plex.scanners.Common import Utils
+from plex_scanners.Common import Utils
 
 IGNORE_DIRS = ['@eaDir', '.*_UNPACK_.*', '.*_FAILED_.*', '\..*', 'lost\+found', '.AppleDouble', '.*\.itlp$']
 ROOT_IGNORE_DIRS = ['\$Recycle.Bin', 'System Volume Information', 'Temporary Items', 'Network Trash Folder']

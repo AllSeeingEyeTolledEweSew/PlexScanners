@@ -1,5 +1,5 @@
 #!/usr/bin/python2.4
-from plex.scanners.Common import Filter
+from plex_scanners.Common import Filter
 import os.path, re, datetime, titlecase, unicodedata, sys
 
 video_exts = ['3g2', '3gp', 'asf', 'asx', 'avc', 'avi', 'avs', 'bivx', 'bup', 'divx', 'dv', 'dvr-ms', 'evo', 'fli', 'flv',

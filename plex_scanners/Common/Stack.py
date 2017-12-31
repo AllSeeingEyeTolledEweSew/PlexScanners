@@ -1,4 +1,4 @@
-from plex.scanners.Common import Media, VideoFiles
+from plex_scanners.Common import Media, VideoFiles
 import os.path, difflib
           
 def compareFilenames(elem):

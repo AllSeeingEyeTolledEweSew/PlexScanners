@@ -6,11 +6,11 @@ import os.path
 from urllib import urlopen, quote
 from xml.dom import minidom
 from collections import Counter, defaultdict
-from plex.scanners.Common import Media
-from plex.scanners.Common import AudioFiles
+from plex_scanners.Common import Media
+from plex_scanners.Common import AudioFiles
 import mutagen
-from plex.scanners.Common.Utils import Log, LevenshteinDistance, LevenshteinRatio, CleanUpString, Unicodize
-from plex.scanners.Common.UnicodeHelper import toBytes
+from plex_scanners.Common.Utils import Log, LevenshteinDistance, LevenshteinRatio, CleanUpString, Unicodize
+from plex_scanners.Common.UnicodeHelper import toBytes
 
 DEBUG = True
 RE_MULTIDISC = re.compile(r'[ \-:]+(?:\[disc|cd) ?([\d]+).*', flags=re.IGNORECASE)
